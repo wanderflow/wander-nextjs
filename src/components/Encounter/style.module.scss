@@ -1,0 +1,67 @@
+.description {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, rgb(231, 211, 253), rgba(200, 150, 255, 0));
+  border-bottom-left-radius: 100px; /* 左下角圆弧 */
+  border-bottom-right-radius: 100px; /* 右下角圆弧 */
+
+  .body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    width: 50%;
+    padding-top: 100px;
+    color: #484848;
+
+    h2 {
+      font-size: clamp(24px, 6vw, 80px);
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: -20px;
+    }
+
+    p {
+      width: 80%;
+      margin: 0;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  video {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background-color: transparent;
+    object-fit: contain;
+    width: clamp(320px, 60vw, 1080px);
+  }
+}
+
+/* Media Queries */
+
+/* xs */
+@media (max-width: 475px) {
+  /* 空的 xs 查询 */
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .description {
+    height: 55vh;
+    .body h2 {
+      line-height: 2;
+    }
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .description {
+    height: 60vh;
+  }
+}

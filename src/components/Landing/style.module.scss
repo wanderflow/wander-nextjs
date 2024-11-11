@@ -1,0 +1,74 @@
+.landing {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: visible;
+
+  .bg {
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .textContainer {
+    padding: 100px 35px;
+    gap: 0px;
+    .text {
+      overflow: visible;
+      display: inline-block;
+      span {
+        display: inline-block;
+        color: white;
+        font-size: clamp(16px, 9vw, 100px);
+        font-weight: 700;
+      }
+    }
+  }
+
+  .button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    top: calc(100vh - 150px);
+    left: calc(100vw - 150px);
+  }
+
+  .sliderContainer {
+    position: absolute;
+    top: calc(100vh - 350px);
+  }
+
+  .slider {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .slider p {
+    position: relative;
+    margin: 0px;
+    color: white;
+    font-size: 230px;
+    font-weight: 500;
+    padding-right: 50px;
+  }
+
+  .slider p:nth-of-type(2) {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+
+  .description {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    p {
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+  }
+}
